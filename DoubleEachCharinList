@@ -1,0 +1,11 @@
+nums = [1,3,5,7]
+newList = []
+
+print('Kaç tekrar hacu?')
+count = int(input())
+if count > 100:
+    print('Anan')
+else:
+    for i in range(len(nums)*count):
+        newList.append(nums[int(i/count)])
+    print(newList)
